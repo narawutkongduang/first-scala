@@ -8,6 +8,7 @@ trait BasketBallPlayer {
 
 object RunBasketBallPlayer extends App {
   val players = ArrayBuffer.empty[BasketBallPlayer]
+
   val pointGuard = PointGuard("Steph Curry")
   players.append(pointGuard)
   val powerForward = PowerForward("Kevin Durant")

@@ -14,6 +14,7 @@ class IntIterator(to: Int) extends Iterator[Int]:
       t
     else
       0
+end IntIterator
 
 object RunIntIterator extends App {
   val iterator = IntIterator(3)
