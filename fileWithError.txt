@@ -1,0 +1,50 @@
+Good
+Good
+Good
+Good
+Good
+Good
+Good
+ERROR connection error
+ErrOR
+Good
+Good
+Good
+Bla ERROR
+Good
+Good
+Good
+ERROR blub
+Good
+Good
+Bla Bla
+Bla Bla
+Bla Bla
+error exception
+Good
+Good
+Bla Bla
+Good
+Good
+Bla Bla
+Good
+Good
+Bla BlaGood
+Good
+Bla Bla
+error stackoverflow
+error stackoverflow
+Good
+Good
+Good
+Good
+Good
+Good
+Good
+Good
+ERROR arithmetic exception
+etc
+Blub
+Blab
+Wow
+Bad
