@@ -1,6 +1,6 @@
-import scala.collection.mutable.ArrayBuffer
+package com.nara.firstscala
+
 import cats.effect.{IO, IOApp}
-import com.nara.firstscala.FirstscalaServer
 
 object Main extends IOApp.Simple:
   val run = FirstscalaServer.run[IO]
