@@ -25,4 +25,6 @@ object FirstscalaRoutes:
       // simple adapting from this doc: https://http4s.org/v1/docs/dsl.html#the-object
       case GET -> Root / "users" =>
         Ok("Getting all users")
+      case GET -> Root / "users" / id =>
+        Ok(s"Getting user: $id")
     }
