@@ -1,3 +1,5 @@
+package basics
+
 import scala.collection.mutable.ArrayBuffer
 
 trait BasketBallPlayer {

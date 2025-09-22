@@ -1,3 +1,5 @@
+package basics
+
 object Train extends App {
   def first(): Unit = {
     println("I am wow")
