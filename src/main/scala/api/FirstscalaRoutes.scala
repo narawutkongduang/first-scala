@@ -27,4 +27,10 @@ object FirstscalaRoutes:
         Ok("Getting all users")
       case GET -> Root / "users" / id =>
         Ok(s"Getting user: $id")
+      case POST -> Root / "users" =>
+        Ok("Creating a new user")
+      case PUT -> Root / "users" / id =>
+        Ok(s"Updating user: $id")
+      case DELETE -> Root / "users" / id =>
+        Ok(s"Deleting user: $id")
     }
