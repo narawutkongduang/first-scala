@@ -18,4 +18,7 @@ object RunWeightConverter extends App {
   val tracker = WeightConverter(kilos)
   println("\nAfter losing 5kg: ")
   println(tracker.afterWeightLoss(5.0).convertInLb)
+
+  println("\nAfter losing 5kg then 2kg: ")
+  println(tracker.afterWeightLoss(5.0).afterWeightLoss(2.0).convertInLb)
 }
