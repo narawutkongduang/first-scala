@@ -1,6 +1,7 @@
 package fs2AndCatsEffects
 
 object VectorPractice extends App {
+  // create Vector
   val numbers = Vector(1, 2, 3, 4, 5)
   val empty = Vector.empty[Int]
   val range = Vector.range(1, 10)
@@ -8,6 +9,7 @@ object VectorPractice extends App {
   println(s"empty: $empty")
   println(s"range: $range")
 
+  // access Vector element
   val first = numbers(0)
   val middle = numbers(2)
   val last = numbers.last
@@ -15,7 +17,7 @@ object VectorPractice extends App {
   println(s"middle: $middle")
   println(s"last: $last")
 
-
+  // modify Vector
   val extended = numbers :+ 6
   println(s"extended: $extended")
   val prepended = 0 +: numbers
@@ -24,6 +26,7 @@ object VectorPractice extends App {
   println(s"updated: $updated")
 
 
+  // transform Vector
   val doubled = numbers.map(_ * 2)
   println(s"doubled: $doubled")
   val evens = numbers.filter(_ % 2 == 0)
@@ -34,7 +37,8 @@ object VectorPractice extends App {
   val combined = numbers ++ vec2
   println(s"combined: $combined")
 
-
+  
+  // cast to other Collections
   val list = numbers.toList
   val array = numbers.toArray
   println(s"list: $list")
