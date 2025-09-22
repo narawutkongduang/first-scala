@@ -22,9 +22,7 @@ object FirstscalaRoutes:
     val dsl = new Http4sDsl[F]{}
     import dsl.*
     HttpRoutes.of[F] {
-      case GET -> Root / "users" / name =>
-        for {
-          greeting <- H.hello(HelloWorld.Name(name))
-          resp <- Ok(greeting)
-        } yield resp
+      // simple adapting from this doc: https://http4s.org/v1/docs/dsl.html#the-object
+      case GET -> Root / "users" =>
+        Ok("Getting all users")
     }
