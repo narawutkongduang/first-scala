@@ -1,6 +1,6 @@
 # first-scala-project
 
-Learning Scala and its libraries (fs2, cats-effect, http4s) for a potential company opportunity through hands-on exercises with different examples. Focusing mainly on [functional programming](https://docs.scala-lang.org/tour/tour-of-scala.html) since I already have OOP experience from Java.
+Learning Scala and its libraries (fs2, cats-effect, http4s) for a potential company opportunity through hands-on exercises with different examples. Focusing mainly on functional programming since I already have OOP experience from Java.
 
 The `basics` package contains simple examples adapted and modified from the [Scala Tour](https://docs.scala-lang.org/tour/tour-of-scala.html). I did some unit tests for these examples with the ScalaTest framework and Matchers.
 
