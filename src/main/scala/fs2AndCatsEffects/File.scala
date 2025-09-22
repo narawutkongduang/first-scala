@@ -1,6 +1,5 @@
-package fs2
+package fs2AndCatsEffects
 
-import fs2.Stream
 import fs2.io.file.{Files, Path}
 import cats.effect.{IO, IOApp}
 
@@ -15,4 +14,5 @@ object File extends IOApp.Simple {
       .compile.toList
       .flatMap(results => IO.println(results))
   }
+
 }

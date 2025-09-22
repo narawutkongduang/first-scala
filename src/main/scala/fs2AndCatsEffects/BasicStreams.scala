@@ -1,4 +1,6 @@
-package fs2
+package fs2AndCatsEffects
+
+import fs2.Stream
 
 object BasicStreams extends App {
 

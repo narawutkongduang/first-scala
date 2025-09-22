@@ -1,4 +1,4 @@
-package fs2
+package fs2AndCatsEffects
 
 object VectorPractice extends App {
   val numbers = Vector(1, 2, 3, 4, 5)
