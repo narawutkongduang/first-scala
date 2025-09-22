@@ -4,5 +4,7 @@ ThisBuild / scalaVersion := "3.3.6"
 
 lazy val root = (project in file("."))
   .settings(
-    name := "first-scala"
+    name := "first-scala",
+    libraryDependencies += "co.fs2" %% "fs2-core" % "3.12.0"
   )
+
