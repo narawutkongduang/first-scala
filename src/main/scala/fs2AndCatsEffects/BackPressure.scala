@@ -13,8 +13,8 @@ object BackPressure extends IOApp.Simple {
       .filter(_ % 2 == 0) // just for the understanding for "only when needed" part
       .evalMap(item =>
         IO.sleep(100.millis) >> // simulate network call
-        IO(slowProcess(item))) // side effects in my case println
-      .compile.drain
+        IO(slowProcess(item * 10))) // multiply by 10 to show it's pure side effects and no computation
+      .compile.drain // THROWS AWAY all values, keeps only side effects!
   }
 
   private def slowProcess(item: Int): Unit = {
