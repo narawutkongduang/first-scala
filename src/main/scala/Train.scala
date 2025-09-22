@@ -1,4 +1,4 @@
-object Train {
+object Train extends App {
   def first(): Unit = {
     println("I am wow")
 
@@ -23,5 +23,7 @@ object Train {
     val multiplyUnderscoreTriplet: (Int, Int, Int) => Int = _ * _ * _
     println(multiplyUnderscoreTriplet(10, 20, 30))
   }
+
+  Train.first()
   
 }

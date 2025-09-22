@@ -12,3 +12,13 @@ class IntIterator(to: Int) extends Iterator[Int]:
       t
     else
       0
+
+object RunIntIterator extends App {
+  val iterator = IntIterator(3)
+  println(iterator.next())
+  println(iterator.hasNext) // wow, it's function store as a attribute, means also no parentheses
+  println(iterator.next())
+  println(iterator.next())
+  println(iterator.hasNext)
+  println(iterator.next())
+}
