@@ -1,4 +1,4 @@
-package com.nara.firstscala
+package api
 
 import cats.effect.Sync
 import cats.implicits.*
@@ -22,7 +22,7 @@ object FirstscalaRoutes:
     val dsl = new Http4sDsl[F]{}
     import dsl.*
     HttpRoutes.of[F] {
-      case GET -> Root / "hello" / name =>
+      case GET -> Root / "users" / name =>
         for {
           greeting <- H.hello(HelloWorld.Name(name))
           resp <- Ok(greeting)

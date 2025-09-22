@@ -1,4 +1,4 @@
-package com.nara.firstscala
+package api
 
 import cats.Applicative
 import cats.implicits.*

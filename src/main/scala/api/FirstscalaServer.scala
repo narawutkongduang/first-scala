@@ -1,4 +1,4 @@
-package com.nara.firstscala
+package api
 
 import cats.effect.Async
 import cats.syntax.all.*
